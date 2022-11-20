@@ -21,7 +21,7 @@ function modalCardRender({
   const markup = `
     <div class="wrapper">
       <div class="image">
-        <img class='poster' src="${IMAGE_URL}${poster_path}" alt="${title}" />
+        <img class='poster' src="${IMAGE_URL}${poster_path}" alt="${title}"   />
       </div>
 
       <div class="wrapper__text">

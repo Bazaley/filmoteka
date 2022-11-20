@@ -1,6 +1,7 @@
 import { modalCardRender } from './modalCardRender';
 import { getMovie } from './movieById';
 import { addListenerByBtns } from './adding-watched-movies';
+import { openVideo } from './openVideoPlayer';
 
 const filmCardsRef = document.querySelector('.gallery');
 const backdropRef = document.querySelector('.backdrop');
@@ -28,6 +29,7 @@ async function openModal(movieId) {
   const movie = await getMovie(movieId);
 
   modalCardRender(movie.data);
+  openVideo(movie.data.videos.results[0]);
   addListenerByBtns(movie);
 }
 

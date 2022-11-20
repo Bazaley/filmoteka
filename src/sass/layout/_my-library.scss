@@ -1,54 +1,52 @@
-
-
 @media screen and (max-width: 767px) {
-    .empty-page__notification{
-        font-size: 12px;
-    }
+  .empty-page__notification {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .empty-page__notification {
-            font-size: 14px;
-        }
+  .empty-page__notification {
+    font-size: 14px;
+  }
 }
 
-
 .empty-page__notification {
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 18px;
-    color: #e42727;
-    line-height: 1.25;
-    text-align: center;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  color: #e42727;
+  line-height: 1.25;
+  text-align: center;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    animation: opac 2.5s forwards;
-
-
+  animation: opac 2.5s forwards;
 }
 
 @keyframes opac {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hide {
-    display: none;
-    animation: opac 2.5s forwards;
+  display: none;
+  animation: opac 2.5s forwards;
 }
 
 .opacity {
-    opacity: 1;
-    position: absolute;
-
+  opacity: 1;
+  position: absolute;
 }
 
 .empty-page__img {
-    margin: 0 auto;
+  margin: 0 auto;
+}
+
+.main-library {
+  transition: background-color 250ms linear;
 }

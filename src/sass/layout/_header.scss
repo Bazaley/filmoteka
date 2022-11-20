@@ -10,6 +10,7 @@
 .header__conteiner {
   padding-top: 42px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -114,7 +115,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('/src/images/background-mobile-1x.jpg');
+      url('/src/images/main_bg_img_mobile_1x-min.9c2dc9ee.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -131,7 +132,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('/src/images/background-mobile-2x.jpg');
+        url('/src/images/main_bg_img_mobile_1x-min.9c2dc9ee.jpg');
     }
   }
 
@@ -168,7 +169,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('/src/images/abstract-background-tablet-1x.jpg');
+      url('/src/images/main_bg_img_tablet_1x-min.7690a3ff.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -181,7 +182,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('/src/images/abstract-background-tablet-2x.jpg');
+        url('/src/images/main_bg_img_tablet_1x-min.7690a3ff.jpg');
     }
   }
 
@@ -215,7 +216,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('/src/images/abstract-background-desktop-1x.jpg');
+      url('/src/images/main_bg_img_desktop_1x-min.9c1dea9b.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -228,7 +229,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('/src/images/abstract-background-desktop-2x.jpg');
+        url('/src/images/main_bg_img_desktop_1x-min.9c1dea9b.jpg');
     }
   }
 
@@ -259,6 +260,10 @@
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 20px;
+}
+
+.header-wrap {
+  align-items: center;
 }
 
 .header-wrap:last-child {
@@ -295,7 +300,7 @@
   background-color: #fff;
   animation: 4s 0.5s infinite pan;
   position: absolute;
-  top: 71px;
+  top: 64px;
   left: 12px;
   transform: translate(0) rotate(180deg);
 
@@ -311,6 +316,9 @@
     left: -24px;
     box-shadow: 0 0 17px 10px #fff;
     transition: background-color 250ms linear, box-shadow 250ms linear;
+  }
+  @media screen and (min-width: 768px) {
+    top: 71px;
   }
 }
 
