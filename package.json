@@ -4,7 +4,7 @@
   "description": "",
   "homepage": "https://Bazaley.github.io/Filmoteka-team-project",
   "scripts": {
-    "start": "parcel src/*.html",
+    "start": "parcel src/*.html --port 1212",
     "build": "parcel build src/*.html --public-url /Filmoteka-team-project/"
   },
   "repository": {

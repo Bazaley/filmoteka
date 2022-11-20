@@ -2,11 +2,8 @@ import { modalCardRender } from './modalCardRender';
 import { getMovie } from './movieById';
 import { addListenerByBtns } from './adding-watched-movies';
 
-import { renderLibraryCrads } from './renderLibraryCrads';
-
 const filmCardsRef = document.querySelector('.gallery');
 const backdropRef = document.querySelector('.backdrop');
-const modalRef = document.querySelector('.modal');
 const modalCloseBtn = document.querySelector('.modal-btn');
 
 filmCardsRef.addEventListener('click', onFilmCardsClick);
@@ -55,8 +52,4 @@ function closeModal() {
   backdropRef.removeEventListener('click', onClickCloseBtnOrOutside);
   const wrapper = document.querySelector('.wrapper');
   wrapper.remove();
-  // const movies = JSON.parse(localStorage.getItem('watched'));
-  // if (document.body.dataset.page === 'library') {
-  //   renderLibraryCrads(movies);
-  // }
 }

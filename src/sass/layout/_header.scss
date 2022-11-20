@@ -11,7 +11,6 @@
   padding-top: 42px;
   display: flex;
   justify-content: space-between;
- 
 }
 
 .header__main-conteiner {
@@ -118,22 +117,11 @@
       url('/src/images/background-mobile-1x.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
-  
- 
   }
-.header__theme {
-  display: flex;
-  justify-content: center;
-}
- .header__theme-btn{
-  font-size: 13px;
-  cursor: pointer;
- }
 
- .form{
-  margin-bottom: 32px;
- }
+  .form {
+    margin-bottom: 32px;
+  }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -185,8 +173,6 @@
     background-size: cover;
   }
 
-       
-
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -219,11 +205,6 @@
     width: 336px;
     margin-bottom: 20px;
   }
-
-    .header__theme-btn {
-      font-size: 14px;
-      cursor: pointer;
-    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -305,24 +286,48 @@
   color: #ffffff;
 }
 
+.bulb {
+  height: 68px;
+  width: 2px;
+  transform-origin: 0 0;
+  opacity: 0.5;
+  cursor: pointer;
+  background-color: #fff;
+  animation: 4s 0.5s infinite pan;
+  position: absolute;
+  top: 71px;
+  left: 12px;
+  transform: translate(0) rotate(180deg);
 
+  &:before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 67px;
+    left: -24px;
+    box-shadow: 0 0 17px 10px #fff;
+    transition: background-color 250ms linear, box-shadow 250ms linear;
+  }
+}
 
-
- .header__theme-btn {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   cursor: pointer;
-   border-radius: 6px;
-   background-color: #9e9797;
-   border: none;
-   text-transform: uppercase;
-
-   min-width: 140px;
-   min-height: 25px;
-
- }
-
- .theme-btn__sunny {
-   color: #ffffff;
- }
+.is-off {
+  &::before {
+    background-color: #0000;
+    box-shadow: 0 0 17px 4px #fff;
+  }
+}
+@keyframes pan {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
