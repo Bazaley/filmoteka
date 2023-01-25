@@ -2,7 +2,7 @@
   "name": "project-movie",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Bazaley.github.io/Filmoteka-team-project",
+  "homepage": "https://Bazaley.github.io/filmoteka",
   "scripts": {
     "start": "parcel src/*.html --port 1212",
     "build": "parcel build src/*.html --public-url /Filmoteka-team-project/"
